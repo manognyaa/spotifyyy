@@ -77,7 +77,10 @@ body {
     margin-left: 350px;
     margin-bottom: 100px;
 }
-
+.controls {
+    display: flex;
+    align-items: center;
+  }
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -302,6 +305,79 @@ body {
     font-size: 22px;
     margin-bottom: 20px;
 }
+.bottom-playbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .play-pause-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .play-icon, .pause-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    visibility: hidden;
+  }
+  
+  .play-pause-button:hover .play-icon,
+  .play-pause-button.playing .play-icon {
+    visibility: visible;
+  }
+  
+  .play-pause-button:hover .pause-icon,
+  .play-pause-button.paused .pause-icon {
+    visibility: visible;
+  }
+  .scrollable-playlist .playlist-list {
+    overflow-y: scroll;
+    /* Optional: set max-height to limit scroll area */
+    max-height: 200px;
+  }
+  .track-info {
+    margin-left: 15px;
+  }
+  
+  .track-title {
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    width: 70%;
+    height: 5px;
+    background-color: #555;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  
+  .progress {
+    width: 50%;
+    height: 100%;
+    background-color: #00e676;
+    border-radius: 5px;
+  }
 
 .playlist-list .item {
     background-color: #252525;
@@ -327,5 +403,3 @@ body {
 .navigation:last-child {
     margin-right: 0; /* Remove margin from the last item */
 }
-
-
