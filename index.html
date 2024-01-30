@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./images/Spotify_favicon.png" type="image/x-icon">
 
@@ -68,22 +68,32 @@
 
 
         
-
-<div class="scrollable-playlist">
-    <h2>Scrollable Playlist</h2>
-    <div class="playlist-list">
-        <!-- Scrollable playlist items -->
-        <div class="item">Song 1</div>
-        <div class="item">Song 2</div>
-        <div class="item">Song 3</div>
-        <div class="item">Song 4</div>
-        <div class="item">Song 5</div>
-        <div class="item">Song 6</div>
-        <div class="item">Song 7</div>
-
-        <!-- Add more items as needed -->
-    </div>
-</div>
+        
+        <div class="scrollable-playlist">
+        
+          <div class="playlist-list">
+            <div class="item">
+              
+              <span class="song-name">Song 1</span>
+              <span class="playlist-name">Playlist A</span>
+            </div>
+            <div class="item">
+              
+              <span class="song-name">Song 2</span>
+              <span class="playlist-name">Playlist B</span>
+            </div>
+            <div class="item">
+               
+                <span class="song-name">Song 1</span>
+                <span class="playlist-name">Playlist A</span>
+              </div>
+              <div class="item">
+              
+                <span class="song-name">Song 2</span>
+                <span class="playlist-name">Playlist B</span>
+              </div>
+            </div>
+        </div>
 
         <div class="policies">
             <ul>
@@ -347,22 +357,27 @@
 
     </div>
 
-    <div class="preview">
-        <div class="text">
-            <h6>Preview of Spotify</h6>
-            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+   
+    <div class="bottom-playbar">
+       
+        <div class="track-info">
+          <span class="track-title">Top 20's</span>
+          <span class="artist-name">Taylor Swift</span>
         </div>
-        <div class="button">
-            <button type="button">Sign up free</button>
+        <br>
+        <div class="controls">
+            <button class="play-button"><i class="fa fa-play"></i></button>
+            <button class="pause-button"><i class="fa fa-pause"></i></button>
+          </div>
+          <br>
+        <div class="progress-bar">
+          <div class="progress"></div>
         </div>
-    </div>
-
-     <div class="bottom-player">
-        <button class="play-button"><i class="fa fa-play"></i></button>
-    </div>
+        
+      </div>
+      </div>
 
     <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
